@@ -18,6 +18,7 @@ By default, this notebook:
  - Processes a sample of 50,000 articles (~10%) from the total dataset of ~423,000
  - Uses 128 minhashes to calculate Jaccard similiarity
  - Outputs the first 10 clusters found in our graph, with at least 5 articles (ignoring small clusters) and less than 30 (improves readability) articles
+ - Has an average esimated run time of ~1min
   
 ### Training Parameters
 You can alter the sample size to include less, more, or all of the data. Including the entire dataset requires a significant amount of memory (> 16 GB), as we are trading space complexity for time complexity in our algorithm. Increasing the number of hashes will have little effect on our results. Reducing the hash number will widen the margin of error for our estimated similarity. 
