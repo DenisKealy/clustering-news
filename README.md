@@ -20,7 +20,7 @@ By default, this notebook:
  - Outputs the first 10 clusters found in our graph, with at least 5 articles (ignoring small clusters) and less than 30 (improves readability) articles
   
 ### Training Parameters
-You can alter the sample size to include less, more, or all of the data. Including the entire dataset requires a significant amount of memory (>16GB), as we are trading space complexity for time complexity in our algorithm. Increasing the number of hashes will have little effect on our results. Reducing the hash number will widen the margin of error for our estimated similarity. 
+You can alter the sample size to include less, more, or all of the data. Including the entire dataset requires a significant amount of memory (> 16 GB), as we are trading space complexity for time complexity in our algorithm. Increasing the number of hashes will have little effect on our results. Reducing the hash number will widen the margin of error for our estimated similarity. 
  
 ### Output Parameters
 You can alter the number of clusters and which clusters to include in the output. With 50,000 articles, we generally find thousands of clusters, so limiting the output is advisable. Setting the min and max articles helps to ensure that the outputted clusters are significant and readable, respectively.
