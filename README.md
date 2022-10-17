@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project uses Locality-Sensitive Hashing (MinHash) and graph processing to cluster news articles based on their estimated Jaccard Similarity.
+This project uses Locality-Sensitive Hashing with MinHash and graph processing to efficiently cluster news articles based on their estimated Jaccard Similarity.
 
 In a Jupyter notebook, we cluster news articles obtained from the UCI Machine Learning Repository by creating a Bag of Words to represent our article content and then performing Locality-Sensitive Hashing with MinHash on our Bag of Words. Then we create a graph where each node is an article and each edge is a match based on two articles exceeding the threshold of their estimated Jaccard Similarity (from our LSH). Finally, we calculate clusters of articles using the connected components of our graph.
  
